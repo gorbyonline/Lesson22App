@@ -13,6 +13,7 @@
 		82B9D27A1E6EC90A00394EA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B9D2781E6EC90A00394EA1 /* Main.storyboard */; };
 		82B9D27C1E6EC90A00394EA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82B9D27B1E6EC90A00394EA1 /* Assets.xcassets */; };
 		82B9D27F1E6EC90A00394EA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B9D27D1E6EC90A00394EA1 /* LaunchScreen.storyboard */; };
+		82B9D2881E6ED42800394EA1 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B9D2871E6ED42800394EA1 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		82B9D27B1E6EC90A00394EA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82B9D27E1E6EC90A00394EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82B9D2801E6EC90A00394EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82B9D2861E6ED42800394EA1 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		82B9D2871E6ED42800394EA1 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		82B9D26E1E6EC90A00394EA1 /* Lesson22App */ = {
 			isa = PBXGroup;
 			children = (
+				82B9D2861E6ED42800394EA1 /* TableViewController.h */,
+				82B9D2871E6ED42800394EA1 /* TableViewController.m */,
 				82B9D2721E6EC90A00394EA1 /* AppDelegate.h */,
 				82B9D2731E6EC90A00394EA1 /* AppDelegate.m */,
 				82B9D2751E6EC90A00394EA1 /* ViewController.h */,
@@ -153,6 +158,7 @@
 				82B9D2771E6EC90A00394EA1 /* ViewController.m in Sources */,
 				82B9D2741E6EC90A00394EA1 /* AppDelegate.m in Sources */,
 				82B9D2711E6EC90A00394EA1 /* main.m in Sources */,
+				82B9D2881E6ED42800394EA1 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +315,7 @@
 				82B9D2851E6EC90A00394EA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
