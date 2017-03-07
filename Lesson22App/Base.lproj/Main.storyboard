@@ -50,6 +50,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="onR-CW-o6t" kind="show" identifier="detailSegue" id="FEK-vw-VPD"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -62,6 +65,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fhm-dW-ePA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1647" y="130"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Cot-Ij-HOz">
+            <objects>
+                <viewController id="onR-CW-o6t" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IC6-Ua-2NC"/>
+                        <viewControllerLayoutGuide type="bottom" id="zDp-XP-9tm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Wn-Eo-Zw1" customClass="Deta">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ycD-Hc-jqj">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailImage" destination="ycD-Hc-jqj" id="Seu-mN-VKt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Qn-94-Yrz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2397.5999999999999" y="129.98500749625188"/>
         </scene>
     </scenes>
 </document>

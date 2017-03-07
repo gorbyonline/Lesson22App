@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import "DetailViewController.h"
 
 @interface TableViewController ()
 
@@ -36,14 +37,30 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 26;
+    return 25;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellIdentifier" forIndexPath:indexPath];
-    cell.textLabel.text = [NSString stringWithFormat:@"Image# %i", indexPath.row + 1];
+    int counter = indexPath.row + 1;
+    cell.textLabel.text = [NSString stringWithFormat:@"img %i", counter];
+    cell.imageView.image = [UIImage imageNamed: cell.textLabel.text];
+    
     return cell;
+}
+
+
+#pragma mark Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UITableViewCell *)sender {
+    if ([segue.identifier isEqualToString:@"detailSegue"]) {
+        DetailViewController *detail = segue.destinationViewController;
+        NSIndexPath *index = [self.tableView indexPathForCell:sender];
+        NSString *imageName = [NSString stringWithFormat:@"img %i", index.row + 1];
+        detail.detailPicture = [UIImage imageNamed:imageName];
+        
+    }
 }
 
 
